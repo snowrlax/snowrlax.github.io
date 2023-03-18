@@ -21,43 +21,82 @@
         rel="stylesheet">
 
     <!-- css -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
     <title>Pranav Sonawane</title>
 </head>
 
 <body>
     <header id="header">
-        <nav id="navbar">
-            <a href="#about">About</a>
-            <a href="#projects">Work</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img id="logo" src="/images/icon.png" href="#welcome-section" alt="logo" width="40" height="40">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="#projects">Work</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#contact">Connect</a>
+      </div>
+    </div>
+  </div>
+</nav>
     </header>
 
     <section id="welcome-section">
-        <h1>Hi, I'm <span class="name">Pranav Sonawane</span>, <p class="headCaption">and I'm an Web Developer</p></h1>
+        <h1>Hi, I'm <span class="name">Pranav</span>, <p class="headCaption">and I'm an Web Developer</p></h1>
         <button class="goto">Goto</button>
     </section>
 
-    <section id="projects">
-        <h2>Here are some of my projects</h2>
-        <div class="project-tile">
-            <a href="https://fabulous-tanuki-8c2ff0.netlify.app">
-                <img src="img_avatar.png" alt="Avatar" style="width:100%">
-                <div class="contain">
-                    <h4><b>Simon Game</b></h4>
-                </div>
-            </a>
-        </div>
+    <section id="about" class="container-fluid">
 
     </section>
 
-    <section id=" contact">
+    <section id="credentials" class="container-fluid">
+        
+    </section>
+
+    <section class="container-fluid" id="projects">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Here are some of my projects</h2>
+            </div>
+
+            <div class="project-tile col-md-4">
+                <a href="https://fabulous-tanuki-8c2ff0.netlify.app">
+                    <img src="img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="contain">
+                        <h4><b>Simon Game</b></h4>
+                    </div> 
+                </a>
+            </div>
+            <div class="project-tile col-md-4">
+                <a href="https://fabulous-tanuki-8c2ff0.netlify.app">
+                    <img src="img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="contain">
+                        <h4><b>Simon Game</b></h4>
+                    </div> 
+                </a>
+            </div>
+
+        </div>
+        
+        
+        
+    </section>
+
+    <section id="contact">
         <a id="profile-link" target="_blank" href="github.com/snowrlax">Github Profile</a>
     </section>
 
 
+
+<!-- JS -->`
+<script src="index.js"></script>
 </body>
 
 </html>
