@@ -1,0 +1,104 @@
+@font-face {
+    font-family: Hagrid;
+    src: url(fonts/Hagrid/hagrid-light.ttf);
+}
+
+@font-face {
+    font-family: NeueMachina;
+    src: url(fonts/NeueMachina/NeueMachina-Regular.otf);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'hagrid', sans-serif;
+    font-weight: 100;
+    font-size: 65px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+#header {
+    overflow: hidden;
+    position: fixed;
+    margin-right: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: #be3144; */
+}
+
+
+#header a {
+    float: right;
+    color: #fffafa;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+#welcome-section {
+    margin: 0;
+    height: 100vh;
+    background-color: #ffffff;
+    color: #fffafa;
+    background-image: url("images/Home.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.name {
+    color: #98E8CD;
+}
+
+.headCaption {
+    font-family: NeueMachina;
+    font-size: 28px;
+}
+
+/* BUTTON  */
+button padding: 20px 40px background: none border: none position: relative text-transform: uppercase font-weight: bold letter-spacing: 3px cursor: pointer &:after,
+&:before content: ''
+position: absolute top: 0 left: 0 bottom: 0 right: 0 border: 2px solid #000 transition: transform .2s &:after transform: translate(3px, 3px) &:before transform: translate(-3px, -3px) &:hover &:after,
+&:before transform: translate(0)
+
+/* PROJECTS */
+#projects {}
+
+.project-tile {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.project-tile:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contain {
+    padding: 2px 16px;
+}
+
+/*<500px S*/
+@media only screen and (max-width: 499px) {}
+
+/*500-1200 M*/
+@media only screen and (min-width: 500px) and (max-width: 1199px) {}
+
+/*>1200px L*/
+@media only screen and (min-width: 1200px) {}
