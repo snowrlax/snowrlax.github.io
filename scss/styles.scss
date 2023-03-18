@@ -1,15 +1,20 @@
+$hagrid: 'hagrid', sans-serif;
+$neue: 'NeueMachina', sans-serif;
+$teal-color: #98E8CD;
+$content-padding: 9% 19%;
+
 @font-face {
     font-family: Hagrid;
-    src: url(fonts/Hagrid/hagrid-light.ttf);
+    src: url(/fonts/Hagrid/hagrid-light.ttf);
 }
 
 @font-face {
     font-family: NeueMachina;
-    src: url(fonts/NeueMachina/NeueMachina-Regular.otf);
+    src: url(/fonts/NeueMachina/NeueMachina-Regular.otf);
 }
 
 * {
-    font-family: 'Poppins', sans-serif;
+    font-family: $hagrid;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
@@ -20,9 +25,18 @@ body {
 }
 
 h1 {
-    font-family: 'hagrid', sans-serif;
+    font-family: $hagrid;
     font-weight: 100;
     font-size: 65px;
+}
+
+h3 {
+    color: $teal-color;
+}
+
+p {
+    font-family: $neue;
+    text-align: justify;
 }
 
 section {
@@ -55,7 +69,7 @@ section {
     text-decoration: none;
     font-size: 1.2rem;
 }
-n
+
 /* NAVBAR */
 .navbar {
     /* border: 1px solid yellow; */
@@ -73,16 +87,16 @@ n
     height: 100vh;
     background-color: #ffffff;
     
-    background-image: url("images/Home.png");
+    background-image: url("/images/Home.png");
     
 }
 
 .name {
-    color: #98E8CD;
+    color: $teal-color;
 }
 
 .headCaption {
-    font-family: NeueMachina;
+    font-family: $neue;
     font-size: 28px;
 }
 
@@ -92,18 +106,26 @@ n
 /* ABOUT SECTION */
 #about {
     background-image: url("/images/blank-bg.png");
+    display: block;
+    padding: $content-padding;
+}
+
+.banner {
+    width: 100%;
 }
 
 /* CREDENTIALS SECTION */
 #credentials {
     background-image: url("/images/1.png");
+    display: block;
+    padding: $content-padding;
 }
 
 /* PROJECTS SECTION*/
 #projects {
     background-image: url("/images/blank-bg.png");
     display: block;
-    padding: 9% 19%;
+    padding: $content-padding;
 }
 
 .project-tile {
