@@ -3,9 +3,26 @@ $neue: 'NeueMachina', sans-serif;
 $teal-color: #98E8CD;
 $content-padding: 9% 19%;
 
-// HIDE SCROLLBAR
-//   
-
+// CUSTOM SCROLLBAR
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #020912;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #091c36;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 @font-face {
     font-family: Hagrid;
     src: url(/fonts/Hagrid/hagrid-light.ttf);
