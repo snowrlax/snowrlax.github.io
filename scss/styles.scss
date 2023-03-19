@@ -25,13 +25,17 @@ body {
 }
 
 h1 {
-    font-family: $hagrid;
     font-weight: 100;
     font-size: 65px;
 }
 
+h2 {
+    font-size: 48px;
+}
+
 h3 {
     color: $teal-color;
+    font-size: 24px;
 }
 
 p {
@@ -72,7 +76,6 @@ section {
 
 /* NAVBAR */
 .navbar {
-    /* border: 1px solid yellow; */
     margin: 2%;
     transition: 0.3s ease-in-out;
 }
@@ -82,13 +85,52 @@ section {
     backdrop-filter: blur(5px);
 }
 
+// WELCOME SECTION
 #welcome-section {
     margin: 0;
     height: 100vh;
     background-color: #ffffff;
-    
     background-image: url("/images/Home.png");
+
+    div {
+        padding: 2%;
+    }
     
+    button {
+        padding: 20px 40px;
+        background: none;
+        border: none;
+        position: relative;
+        text-transform: uppercase;
+        color: $teal-color;
+        font-family: $neue;
+        font-weight: bold;
+        letter-spacing: 3px;
+        cursor: pointer;
+        &:after,
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          border: 2px solid $teal-color;
+          transition: transform .2s;
+        }
+        &:after {
+          transform: translate(3px, 3px);
+        }
+        &:before {
+          transform: translate(-3px, -3px);
+        }
+        &:hover {
+          &:after,
+          &:before {
+            transform: translate(0);
+          }
+        }
+      }
 }
 
 .name {
@@ -108,6 +150,10 @@ section {
     background-image: url("/images/blank-bg.png");
     display: block;
     padding: $content-padding;
+
+    div {
+        padding: 2% 0;
+    }
 }
 
 .banner {
@@ -119,7 +165,20 @@ section {
     background-image: url("/images/1.png");
     display: block;
     padding: $content-padding;
+
+    .cred-head {
+        text-align: right;
+    }
+    .cred-tile {
+        // padding: 5% 0 3% 8%;
+    }
+
+    .cred-head, .cred-tile {
+        padding: 2%;
+    }
 }
+
+
 
 /* PROJECTS SECTION*/
 #projects {

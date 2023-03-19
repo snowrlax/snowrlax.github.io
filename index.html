@@ -39,7 +39,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
+                    <div class="navbar-nav ms-auto">
                         <a class="nav-link" href="#projects">Work</a>
                         <a class="nav-link" href="#about">About</a>
                         <a class="nav-link" href="#contact">Connect</a>
@@ -50,9 +50,11 @@
     </header>
 
     <section id="welcome-section">
-        <h1>Hi, I'm <span class="name">Pranav</span>, <p class="headCaption">and I'm an Web Developer</p>
-        </h1>
-        <button class="goto">Goto</button>
+        <div class="row">
+            <div class="col-md-12"><h1>Hi, I'm <span class="name">Pranav</span>, <p class="headCaption">and I'm an Web Developer</p>
+            </h1></div>
+            <div class="col-md-12"><button class="goto">Goto</button></div>
+        </div>        
     </section>
 
     <section id="about" class="container-fluid">
@@ -77,16 +79,20 @@
             <div class="col-md-12">
                 <h2>Credentials</h2>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-8 ms-auto cred-head ">
                 <h3>Education</h3>
-                <p>BS Computer Science (2009-2012)</p>
-                <p>Tresswood Academy (2005-2008)</p>
             </div>
-            <div class="col-md-12">
+            <div class="col-md-4 ms-auto cred-tile">
+                <p>B.tech in Information Technology (2021- {ongoing})</p>
+                <p>Diploma in Computer Engineering (2018-2021)</p>
+            </div>
+            <div class="col-md-8 ms-auto cred-head">
                 <h3>Skills</h3>
-                <p>Wireframing</p>
-                <p>Prototyping</p>
-                <p>Visual Branding</p>
+            </div>
+            <div class="col-md-4 ms-auto cred-tile">
+                <p>Computer Proficiency</p>
+                <p>Team Player</p>
+                <p>Problem solving abilities </p>
             </div>
         </div>
     </section>
