@@ -3,6 +3,9 @@ $neue: 'NeueMachina', sans-serif;
 $teal-color: #98E8CD;
 $content-padding: 9% 19%;
 
+// HIDE SCROLLBAR
+//   
+
 @font-face {
     font-family: Hagrid;
     src: url(/fonts/Hagrid/hagrid-light.ttf);
@@ -22,6 +25,7 @@ $content-padding: 9% 19%;
 body {
     margin: 0;
     color: #fffafa;
+    // overflow: hidden;  /*Hide Scrollbar*/
 }
 
 h1 {
