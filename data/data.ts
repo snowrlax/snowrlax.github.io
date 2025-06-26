@@ -83,7 +83,7 @@ export const MyProjects = [
     title: "Mixtape",
     desc: "A Vintage Playlist maker for you and your loved ones!",
     techStack: ["Next.js", "TypeScript", "Tailwind"],
-    image: "/mockups/hsa-mockup-1.png",
+    image: "/mockups/mixtape-mockup.png",
     liveUrl: "https://mixtape-pied.vercel.app",
     githubUrl: "",
   },
