@@ -28,7 +28,7 @@ export default function Home() {
   const experienceInView = useInView(experienceRef, { once: true, amount: 0.2 })
   const recognitionInView = useInView(recognitionRef, { once: true, amount: 0.2 })
   const whatIDoInView = useInView(whatIDoRef, { once: true, amount: 0.2 })
-  const projectsInView = useInView(projectsRef, { once: true, amount: 0.2 })
+  const projectsInView = useInView(projectsRef, { once: true, amount: 0.1 })
 
   // Scroll progress for parallax effects
   const { scrollYProgress } = useScroll()
@@ -243,10 +243,10 @@ export default function Home() {
 
           {/* Projects */}
           <motion.div
-            ref={projectsRef}
-            variants={sectionVariants}
-            initial="hidden"
-            animate={projectsInView ? "visible" : "hidden"}
+            // ref={projectsRef}
+            // variants={sectionVariants}
+            // initial="hidden"
+            // animate={projectsInView ? "visible" : "hidden"}
             className="w-full"
           >
             <Section>
@@ -282,8 +282,8 @@ export default function Home() {
       {/* Anime Background Section */}
       <AnimeBackground>
 
-      {/* Footer */}
-      <Footer />
+        {/* Footer */}
+        <Footer />
 
       </AnimeBackground>
 

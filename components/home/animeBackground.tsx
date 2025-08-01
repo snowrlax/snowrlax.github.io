@@ -121,7 +121,7 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
   }
 
   return (
-    <div className={`relative w-full ${className} hidden md:block`}>
+    <div className={`relative w-full md:mb-24 ${className} hidden md:block`}>
       {/* Content */}
       <div className="relative pt-24">
         {children}
@@ -145,6 +145,9 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
         >
           <Image
             src={images.sootSprits}
+            style={{
+              filter: "drop-shadow(0 0 10px rgba(0, 0, 0, 0.3))"
+            }}
             alt="Spirited Away Tattoo"
             fill
             className="object-contain"
@@ -168,6 +171,9 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
         >
           <Image
             src={images.chihiro}
+            style={{
+              filter: "drop-shadow(0 0 10px rgba(0, 0, 0, 0.3))"
+            }}
             alt="Chihiro's Train Tickets"
             fill
             className="object-contain"
@@ -212,6 +218,9 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
         >
           <Image
             src={images.ratAndBird}
+            style={{
+              filter: "drop-shadow(0 0 10px rgba(0, 0, 0, 0.1))"
+            }}
             alt="Rat and Bird"
             fill
             className="object-contain"
@@ -234,6 +243,9 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
         >
           <Image
             src={images.pochita}
+            style={{
+              filter: "drop-shadow(0 0 10px rgba(0, 0, 0, 0.3))"
+            }}
             alt="Anime Element"
             fill
             className="object-contain"
@@ -278,6 +290,9 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
         >
           <Image
             src={images.itsumi}
+            style={{
+              filter: "drop-shadow(0 0 10px rgba(0, 0, 0, 0.3))"
+            }}
             alt="Itsumi"
             fill
             className="object-contain"
@@ -300,6 +315,9 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
         >
           <Image
             src={images.punpun}
+            style={{
+              filter: "drop-shadow(0 0 10px rgba(0, 0, 0, 0.2))"
+            }}
             alt="Punpun"
             fill
             className="object-contain"
@@ -322,6 +340,9 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
         >
           <Image
             src={images.momo}
+            style={{
+              filter: "drop-shadow(0 0 10px rgba(0, 0, 0, 0.3))"
+            }}
             alt="Momo"
             fill
             className="object-contain"

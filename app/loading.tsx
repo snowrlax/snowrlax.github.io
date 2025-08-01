@@ -127,7 +127,7 @@ const Loading = () => {
                   transition={{ delay: 0.5, duration: 0.8 }}
                 >
                   <span className="bg-lightbrown text-black">Software Developer</span> based in <br />
-                  Maharashtra, India.
+                  Pune, India.
                 </motion.p>
                 <motion.div
                   className="flex w-24 mt-2"

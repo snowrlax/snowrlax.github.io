@@ -33,7 +33,7 @@ const ProfileHeading = ({ className }: { className?: string }) => {
         </h1>
         <p className="text-base md:text-xl italic text-gray-600">
           <span className="bg-lightbrown text-black">Software Developer</span> based in <br />
-          Maharashtra, India.
+          Pune, India.
         </p>
         <div className="flex gap-4 py-2">
           <Link href={GithubProfileUrl} target={"_blank"}>
