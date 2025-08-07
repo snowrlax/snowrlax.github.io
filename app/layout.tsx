@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layout/navbar";
-import Footer from "@/components/layout/footer";
 import dynamic from "next/dynamic";
+import CloudflareWebAnalyticsProvider from 'next-cloudflare-web-analytics';
 
 // Dynamically import non-critical components
-const GoogleAnalytics = dynamic(() => 
+const GoogleAnalytics = dynamic(() =>
   import("@/components/shared/GoogleAnalytics"), { ssr: false }
 );
 
@@ -14,7 +13,7 @@ const GoogleAnalytics = dynamic(() =>
 const DeferredScripts = dynamic(() => import('./defer-script'), { ssr: false });
 
 // Configure font with preload: true to let Next.js handle preloading
-const inter = Inter({ 
+const inter = Inter({
   subsets: ["latin"],
   display: 'swap',
   preload: true,
@@ -51,6 +50,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <GoogleAnalytics gaId="G-852PT30F8Y" />
+        <CloudflareWebAnalyticsProvider token={'b7e381d405294471b827478502ed022a'} />
         {/* <Navbar /> */}
         {children}
         {/* <Footer /> */}
