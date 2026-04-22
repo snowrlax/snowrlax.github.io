@@ -10,7 +10,7 @@ import Link from "next/link";
 import EmojiContactForm from "../shared/EmojiContactForm";
 import { AnimatePresence } from "framer-motion";
 
-const Footer = ({className}: {className?: string}) => {
+const Footer = ({ className }: { className?: string }) => {
   const [showContactForm, setShowContactForm] = useState(false);
 
   return (
@@ -36,7 +36,7 @@ const Footer = ({className}: {className?: string}) => {
                     I&apos;m Pranav Sonawane
                   </h2>
                   <p className="text-sm md:text-base italic text-gray-300">
-                  <span className="bg-lightbrown text-black">Software Developer</span> based in <br />Pune, India
+                    <span className="bg-lightbrown text-black">Software Developer</span> based in <br />Pune, India
                   </p>
                 </div>
                 <div className="flex gap-4 py-2">
@@ -67,11 +67,11 @@ const Footer = ({className}: {className?: string}) => {
         </div>
 
         <div className="flex justify-center items-center relative py-12 md:py-0 md:mb-0 px-20">
-          <button 
+          <button
             className="absolute flex text-center justify-center rounded-full w-[90%] bg-white py-4 px-6 text-sm md:text-md text-black font-semibold hover:bg-gray-100 transition-colors"
             onClick={() => setShowContactForm(true)}
           >
-            Let&apos;s talk
+            Say Hi!
           </button>
         </div>
       </div>
