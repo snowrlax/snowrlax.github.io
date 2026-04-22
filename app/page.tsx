@@ -140,7 +140,7 @@ export default function Home() {
           </motion.div> */}
 
           {/* Working Experience */}
-          <motion.div
+          {/* <motion.div
             ref={experienceRef}
             variants={sectionVariants}
             initial="hidden"
@@ -170,10 +170,10 @@ export default function Home() {
                 ))}
               </motion.div>
             </Section>
-          </motion.div>
+          </motion.div> */}
 
           {/* Awards & Recognition */}
-          <motion.div
+          {/* <motion.div
             ref={recognitionRef}
             variants={sectionVariants}
             initial="hidden"
@@ -203,7 +203,7 @@ export default function Home() {
                 ))}
               </motion.div>
             </Section>
-          </motion.div>
+          </motion.div> */}
 
           {/* What i do */}
           {/* <motion.div
@@ -243,16 +243,19 @@ export default function Home() {
 
           {/* Projects */}
           <motion.div
-            // ref={projectsRef}
-            // variants={sectionVariants}
-            // initial="hidden"
-            // animate={projectsInView ? "visible" : "hidden"}
+            ref={projectsRef}
+            variants={sectionVariants}
+            initial="hidden"
+            animate={projectsInView ? "visible" : "hidden"}
             className="w-full"
           >
-            <Section>
-              <motion.h2 className="text-2xl font-semibold pb-4" variants={itemVariants}>
-                Projects
+            <Section linebreak={false}>
+              <motion.h2 className="text-2xl text-gray-800 font-semibold " variants={itemVariants}>
+                Fun Projects
               </motion.h2>
+              <motion.p className="pb-5 text-gray-500">
+                Built in my spare time
+              </motion.p>
 
               <Suspense fallback={<LoadingFallback />}>
                 <motion.div variants={cardContainerVariants} className="space-y-6">
