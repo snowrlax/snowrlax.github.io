@@ -9,7 +9,7 @@ const nextConfig = {
     ],
     unoptimized: true, // Disable image optimization for static export
   },
-  output: "export", // <=== enables static exports
+  // output: "export", // Disabled to enable API routes for contact form
   reactStrictMode: true,
   
   // Optimize bundle size

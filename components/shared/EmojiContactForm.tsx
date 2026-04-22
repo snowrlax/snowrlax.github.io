@@ -14,6 +14,8 @@ export default function EmojiContactForm({ onClose }: { onClose: () => void }) {
   const [message, setMessage] = useState<string[]>([])
   const [activeCategory, setActiveCategory] = useState(0)
   const [submitted, setSubmitted] = useState(false)
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
   const [name, setName] = useState("")
   const [email, setEmail] = useState("")
 
@@ -27,16 +29,33 @@ export default function EmojiContactForm({ onClose }: { onClose: () => void }) {
     setMessage(message.slice(0, -1))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    if (name && email && message.length > 0) {
-      // In a real app, you would send this data to your backend
-      console.log({
-        name,
-        email,
-        emojiMessage: message.join('')
+    if (!name || !email || message.length === 0) return
+
+    setLoading(true)
+    setError(null)
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name,
+          email,
+          emojiMessage: message.join('')
+        }),
       })
+
+      if (!response.ok) {
+        throw new Error('Failed to send message')
+      }
+
       setSubmitted(true)
+    } catch {
+      setError('Failed to send message. Please try again.')
+    } finally {
+      setLoading(false)
     }
   }
 
@@ -152,12 +171,16 @@ export default function EmojiContactForm({ onClose }: { onClose: () => void }) {
                 </div>
               </div>
 
-              <button 
+              {error && (
+                <p className="text-red-500 text-sm text-center">{error}</p>
+              )}
+
+              <button
                 type="submit"
-                className="w-full py-3 bg-black text-white rounded-full font-medium hover:bg-gray-800 transition-colors"
-                disabled={!name || !email || message.length === 0}
+                className="w-full py-3 bg-black text-white rounded-full font-medium hover:bg-gray-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                disabled={!name || !email || message.length === 0 || loading}
               >
-                Send Emoji Message
+                {loading ? 'Sending...' : 'Send Emoji Message'}
               </button>
             </motion.form>
           ) : (
