@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { Info } from 'lucide-react'
 import { useRateLimit } from '@/hooks/useRateLimit'
 
 const emojiCategories = [
@@ -124,7 +125,16 @@ export default function EmojiContactForm({ onClose }: { onClose: () => void }) {
         onClick={e => e.stopPropagation()}
       >
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-2xl font-bold">Send me a Haiku</h2>
+          <div className="flex items-center gap-2">
+            <h2 className="text-2xl font-bold">Send me a Haiku</h2>
+            <div className="relative group">
+              <Info className="w-4 h-4 text-gray-400 hover:text-gray-600 cursor-help" />
+              <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 px-3 py-2 bg-gray-800 text-white text-xs rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 w-48 text-center z-10">
+                A haiku is a Japanese poem with 3 lines: 5, 7, and 5 syllables.
+                <div className="absolute left-1/2 -translate-x-1/2 top-full w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-800"></div>
+              </div>
+            </div>
+          </div>
           <button
             onClick={onClose}
             className="text-gray-500 hover:text-black text-xl"

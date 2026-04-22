@@ -55,23 +55,18 @@ const Footer = ({ className }: { className?: string }) => {
           </div>
         </div>
 
-        <div className="hidden md:flex justify-center gap-4 md:gap-12 px-4 text-gray-400">
-          {/* <div className="flex flex-col justify-center gap-8 text-xs md:text-lg">
-            <Link href="/services">Services</Link>
-            <Link href="/about">About Me</Link>
-          </div> */}
-          {/* <div className="flex flex-col justify-center gap-8 text-xs md:text-lg">
-            <Link href="/blog">Blog</Link>
-            <Link href="/contact">Contact Me</Link>
-          </div> */}
+        <div className="hidden md:flex justify-center items-center gap-8 px-4 text-gray-400">
+          <Link href="/" className="hover:text-white transition-colors">Home</Link>
+          <Link href="/about" className="hover:text-white transition-colors">About</Link>
+          <Link href="/blog" className="hover:text-white transition-colors">Blog</Link>
         </div>
 
-        <div className="flex justify-center items-center relative py-12 md:py-0 md:mb-0 px-20">
+        <div className="flex justify-center items-center relative py-12 md:py-0 md:mb-0 px-4">
           <button
-            className="absolute flex text-center justify-center rounded-full w-[90%] bg-white py-4 px-6 text-sm md:text-md text-black font-semibold hover:bg-gray-100 transition-colors"
+            className="flex text-center justify-center rounded-full w-[90%] bg-white py-4 px-6 text-sm md:text-md text-black font-semibold hover:bg-gray-100 transition-colors text-nowrap"
             onClick={() => setShowContactForm(true)}
           >
-            Say Hi!
+            Send Me a Haiku
           </button>
         </div>
       </div>
