@@ -79,6 +79,15 @@ export const whatIDoData = [
 
 export const MyProjects = [
   {
+    id: 0,
+    title: "Sprechly",
+    desc: "Learn German with flashcards, quizzes and AI chatbot.",
+    techStack: ["Next.js", "TypeScript", "Tailwind"],
+    image: "/mockups/sprechly-mockup.png",
+    liveUrl: "https://sprechly.vercel.app",
+    githubUrl: "https://github.com/snowrlax/sprechly",
+  },
+  {
     id: 1,
     title: "Mixtape",
     desc: "A Vintage Playlist maker for you and your loved ones!",
