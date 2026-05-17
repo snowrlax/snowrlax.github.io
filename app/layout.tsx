@@ -50,7 +50,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <GoogleAnalytics gaId="G-852PT30F8Y" />
-        <CloudflareWebAnalyticsProvider token={'b7e381d405294471b827478502ed022a'} />
+        <CloudflareWebAnalyticsProvider token={'bc3d3f4b5ee2473c9397fbef48a6622d'} />
         {/* <Navbar /> */}
         {children}
         {/* <Footer /> */}
