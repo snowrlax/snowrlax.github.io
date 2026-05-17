@@ -110,14 +110,14 @@ export default function Home() {
       {/* Progress bar */}
       <motion.div className="fixed top-0 left-0 right-0 h-1 bg-black z-40 origin-left" style={{ scaleX }} />
 
-      <div className="flex flex-col md:flex-row w-full px-7 md:max-w-6xl gap-7 md:gap-12">
+      <div className="flex flex-col lg:flex-row w-full px-7 lg:max-w-6xl lg:gap-12">
         <div
-          className="w-full md:w-[30%]"
+          className="w-full lg:w-[30%]"
         >
           <ProfileHeading />
         </div>
 
-        <div className="flex flex-col items-center w-full md:w-[65%] md:pt-24">
+        <div className="flex flex-col items-center w-full lg:w-[65%] lg:pt-24">
           {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -242,11 +242,11 @@ export default function Home() {
             className="w-full"
           >
             <Section linebreak={false}>
-              <div className="flex flex-col py-4">
+              <div className="flex flex-col lg:py-4">
                 <motion.h2 className="text-2xl text-gray-800 font-semibold " variants={itemVariants}>
                   Projects
                 </motion.h2>
-                <motion.p className="pb-5 text-gray-500">
+                <motion.p className="text-gray-500">
                   Built in my spare time
                 </motion.p>
               </div>
@@ -284,7 +284,7 @@ export default function Home() {
 
       </AnimeBackground>
 
-      <Footer className="block md:hidden" />
+      <Footer className="block lg:hidden" />
 
     </motion.main>
   )

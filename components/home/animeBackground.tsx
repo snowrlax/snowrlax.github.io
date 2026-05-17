@@ -121,7 +121,7 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
   }
 
   return (
-    <div className={`relative w-full md:mb-24 ${className} hidden md:block`}>
+    <div className={`relative w-full md:mb-24 ${className} hidden lg:block`}>
       {/* Content */}
       <div className="relative pt-24">
         {children}
@@ -137,8 +137,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           initial="hidden"
           animate={spiritedInView ? "visible" : "hidden"}
           whileHover="hover"
-          style={{ 
-            x: spiritedX, 
+          style={{
+            x: spiritedX,
             // y: useTransform([spiritedY, floatingY], (values: number[]) => values[0] + values[1])
             y: floatingY
           }}
@@ -163,8 +163,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           initial="hidden"
           animate={trainInView ? "visible" : "hidden"}
           whileHover="hover"
-          style={{ 
-            x: trainX, 
+          style={{
+            x: trainX,
             // y: useTransform([trainY, floatingY], (values: number[]) => values[0] + values[1])
             y: floatingY
           }}
@@ -188,8 +188,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           initial="hidden"
           animate={grannyInView ? "visible" : "hidden"}
           whileHover="hover"
-          style={{ 
-            x: grannyX, 
+          style={{
+            x: grannyX,
             // y: useTransform([grannyY, floatingY], (values: number[]) => values[0] + values[1])
             y: floatingY
           }}
@@ -210,8 +210,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           initial="hidden"
           animate={ratAndBirdInView ? "visible" : "hidden"}
           whileHover="hover"
-          style={{ 
-            x: ratAndBirdX, 
+          style={{
+            x: ratAndBirdX,
             // y: useTransform([ratAndBirdY, floatingY], (values: number[]) => values[0] + values[1])
             y: floatingY
           }}
@@ -235,8 +235,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           initial="hidden"
           animate={animeInView ? "visible" : "hidden"}
           whileHover="hover"
-          style={{ 
-            x: animeX, 
+          style={{
+            x: animeX,
             // y: useTransform([animeY, floatingY], (values: number[]) => values[0] + values[1])
             y: floatingY
           }}
@@ -260,8 +260,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           initial="hidden"
           animate={ponyoInView ? "visible" : "hidden"}
           whileHover="hover"
-          style={{ 
-            x: ponyoX, 
+          style={{
+            x: ponyoX,
             // y: useTransform([ponyoY, floatingY], (values: number[]) => values[0] + values[1])
             y: floatingY
           }}
@@ -282,8 +282,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           initial="hidden"
           animate={itsumiInView ? "visible" : "hidden"}
           whileHover="hover"
-          style={{ 
-            x: itsumiX, 
+          style={{
+            x: itsumiX,
             // y: useTransform([itsumiY, floatingY], (values: number[]) => values[0] + values[1])
             y: floatingY
           }}
@@ -307,8 +307,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           initial="hidden"
           animate={punpunInView ? "visible" : "hidden"}
           whileHover="hover"
-          style={{ 
-            x: punpunX, 
+          style={{
+            x: punpunX,
             // y: useTransform([punpunY, floatingY], (values: number[]) => values[0] + values[1])
             y: floatingY
           }}
@@ -332,8 +332,8 @@ const AnimeBackground = ({ children, className = "" }: AnimeBackgroundProps) => 
           initial="hidden"
           animate={momoInView ? "visible" : "hidden"}
           whileHover="hover"
-          style={{ 
-            x: momoX, 
+          style={{
+            x: momoX,
             // y: useTransform([momoY, floatingY], (values: number[]) => values[0] + values[1])
             y: floatingY
           }}

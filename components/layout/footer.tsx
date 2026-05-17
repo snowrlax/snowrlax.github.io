@@ -14,8 +14,8 @@ const Footer = ({ className }: { className?: string }) => {
   const [showContactForm, setShowContactForm] = useState(false);
 
   return (
-    <section className={`bg-offwhite md:p-12 ${className}`}>
-      <div className="flex flex-col md:flex-row justify-between md:p-12 rounded-3xl rounded-bl-none rounded-br-none md:rounded-full bg-black text-white">
+    <section className={`bg-offwhite lg:p-12 ${className}`}>
+      <div className="flex flex-col md:flex-row justify-between lg:p-12 rounded-3xl rounded-bl-none rounded-br-none lg:rounded-full bg-black text-white">
         <div className="flex flex-col p-7 md:flex-row items-center">
           <div className="flex md:flex-row items-center gap-7 md:gap-12">
             <Image
