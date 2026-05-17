@@ -49,7 +49,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>
       <body className={inter.className}>
-        <GoogleAnalytics gaId="G-852PT30F8Y" />
+        {/* <GoogleAnalytics gaId="G-852PT30F8Y" /> */}
         <CloudflareWebAnalyticsProvider token={'bc3d3f4b5ee2473c9397fbef48a6622d'} />
         {/* <Navbar /> */}
         {children}
