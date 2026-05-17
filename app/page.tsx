@@ -108,7 +108,7 @@ export default function Home() {
       transition={{ duration: 0.5 }}
     >
       {/* Progress bar */}
-      <motion.div className="fixed top-0 left-0 right-0 h-1 bg-black z-40 origin-left" style={{ scaleX }} />
+      {/* <motion.div className="fixed top-0 left-0 right-0 h-1 bg-black z-40 origin-left" style={{ scaleX }} /> */}
 
       <div className="flex flex-col lg:flex-row w-full px-7 lg:max-w-6xl lg:gap-12">
         <div
