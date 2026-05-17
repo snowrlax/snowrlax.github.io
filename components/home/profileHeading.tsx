@@ -26,7 +26,7 @@ const ProfileHeading = ({ className }: { className?: string }) => {
         width={200}
         height={200}
         className="rounded-full object-cover h-44 w-44"
-        unoptimized
+        fetchPriority="high"
       />
       <div className="flex flex-col justify-center pt-7 gap-2">
         <div className="flex flex-col">
