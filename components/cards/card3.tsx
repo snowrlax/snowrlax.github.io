@@ -49,7 +49,7 @@ const CardWithImage: React.FC<Props> = (props: Props) => {
       // initial={{ opacity: 0, y: 100 }}
       whileHover={{ backgroundColor: "#FEFEFE" }}
       transition={{ duration: 0.2 }}
-      className={`flex flex-col items-center justify-between gap-3 rounded-2xl border border-lightbrown bg-white p-3 overflow-hidden ${props.className}`}
+      className={`flex flex-col items-center h-full justify-between gap-3 rounded-2xl border border-lightbrown bg-white p-3 overflow-hidden ${props.className}`}
     >
       <Image
         src={props.data.image || defaultImageSrc}

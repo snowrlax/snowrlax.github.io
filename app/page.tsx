@@ -110,22 +110,14 @@ export default function Home() {
       {/* Progress bar */}
       <motion.div className="fixed top-0 left-0 right-0 h-1 bg-black z-40 origin-left" style={{ scaleX }} />
 
-      <div className="flex flex-col md:flex-row w-full px-7 md:max-w-5xl gap-7 md:gap-12">
-        <motion.div
-          className="w-full md:w-[50%]"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{
-            type: "spring",
-            stiffness: 100,
-            damping: 20,
-            delay: 0.2,
-          }}
+      <div className="flex flex-col md:flex-row w-full px-7 md:max-w-6xl gap-7 md:gap-12">
+        <div
+          className="w-full md:w-[30%]"
         >
           <ProfileHeading />
-        </motion.div>
+        </div>
 
-        <div className="flex flex-col items-center w-full md:w-[50%] md:pt-24">
+        <div className="flex flex-col items-center w-full md:w-[65%] md:pt-24">
           {/* <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -250,15 +242,17 @@ export default function Home() {
             className="w-full"
           >
             <Section linebreak={false}>
-              <motion.h2 className="text-2xl text-gray-800 font-semibold " variants={itemVariants}>
-                Fun Projects
-              </motion.h2>
-              <motion.p className="pb-5 text-gray-500">
-                Built in my spare time
-              </motion.p>
+              <div className="flex flex-col py-4">
+                <motion.h2 className="text-2xl text-gray-800 font-semibold " variants={itemVariants}>
+                  Projects
+                </motion.h2>
+                <motion.p className="pb-5 text-gray-500">
+                  Built in my spare time
+                </motion.p>
+              </div>
 
               <Suspense fallback={<LoadingFallback />}>
-                <motion.div variants={cardContainerVariants} className="space-y-6">
+                <motion.div variants={cardContainerVariants} className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   {MyProjects.map((data, index) => (
                     <motion.div
                       key={data.id}
